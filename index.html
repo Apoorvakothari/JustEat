@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustEat</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Just<span>Eat</span></h1>
+        </div>
+        <div class="currentDetails">
+          <div class="header-option">
+            <i data-feather="map-pin"></i>
+            <span>Mumbai</span>
+          </div>
+          <div class="header-option">
+            <i data-feather="clock"></i>
+            <span>Deliver now</span>
+          </div>
+        </div>
+        <div class="searchBar">
+          <div class="header-option">
+            <i data-feather="search"></i>
+            <span><input class="header-search" placeholder="Search" /></span>
+          </div>
+          <div class="header-option">
+            <span>Sign in</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="options">
+      <div class="container">
+        <button class="options-btn selected">
+          <i data-feather="shopping-bag"></i>
+          <span>Delivery</span>
+        </button>
+        <button class="options-btn">
+          <i data-feather="watch"></i>
+          <span>Pick-up</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="listings">
+      <div class="container">
+        <div class="header">
+          <div class="header-title">
+            <h2>We are there when you are hungry</h2>
+            <span>The fastest to knock on your door</span>
+          </div>
+          <div class="header-viewOptions">
+            <div class="viewAll">
+              <span>View all</span>
+            </div>
+            <div class="viewMore">
+              <span class="arrow circle left"
+                ><i data-feather="arrow-left"></i>
+              </span>
+              <span class="arrow circle right darker">
+                <i data-feather="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="listings-grid" id="recommendations">
+          <div class="listings-col">
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>Italian Soya Salad</h3>
+                  <div class="info">
+                    <span>Rs 120.99 + delivery fee | 20-30 MINS | </span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >Italian | European | Salad | Healthy</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>French Toast</h3>
+                  <div class="info">
+                    <span>Rs 244.99 delivery fee | 20-30 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.7</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >French | Toast | Breakfast | Fast Food | Blueberry</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://piverindori.com/wp-content/uploads/2022/07/wp1987065.webp"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>Veg Cheese Burger</h3>
+                  <div class="info">
+                    <span>Rs 369.00 + delivery fee | 25-30 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.5</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText">Burger | Fast Food | Non-veg</span>
+              </div>
+            </div>
+          </div>
+          <div class="listings-col">
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS | </span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://biancazapatka.com/wp-content/uploads/2020/02/kaese-spaetzle-vegan-mac-and-cheese-pasta.jpg"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 20-30 MINS | </span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://biancazapatka.com/wp-content/uploads/2020/02/kaese-spaetzle-vegan-mac-and-cheese-pasta.jpg"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>French Toast</h3>
+                  <div class="info">
+                    <span>Rs 244.99 delivery fee | 20-30 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.7</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >French | Toast | Breakfast | Fast Food | Blueberry</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Listing -->
+    <div class="listings">
+      <div class="container">
+        <div class="header">
+          <div class="header-title">
+            <h2>Popular near you</h2>
+            <span>The fastest food to your door</span>
+          </div>
+          <div class="header-viewOptions">
+            <div class="viewAll">
+              <span>View all</span>
+            </div>
+            <div class="viewMore">
+              <span class="arrow circle left"
+                ><i data-feather="arrow-left"></i>
+              </span>
+              <span class="arrow circle right darker">
+                <i data-feather="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="listings-grid" id="popular">
+          <div class="listings-col">
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1562967914-01efa7e87832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://biancazapatka.com/wp-content/uploads/2020/02/kaese-spaetzle-vegan-mac-and-cheese-pasta.jpg"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://biancazapatka.com/wp-content/uploads/2020/02/kaese-spaetzle-vegan-mac-and-cheese-pasta.jpg"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>French Toast</h3>
+                  <div class="info">
+                    <span>Rs 244.99 + delivery fee | 20-30 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.7</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >French | Toast | Breakfast | Fast Food | Blueberry</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="listings-col">
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://biancazapatka.com/wp-content/uploads/2020/02/kaese-spaetzle-vegan-mac-and-cheese-pasta.jpg"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Vegan Cheese Spaetzle</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Listing -->
+    <div class="listings">
+      <div class="container">
+        <div class="header">
+          <div class="header-title">
+            <h2>Special offers</h2>
+            <span>The fastest food to your door</span>
+          </div>
+          <div class="header-viewOptions">
+            <div class="viewAll">
+              <span>View all</span>
+            </div>
+            <div class="viewMore">
+              <span class="arrow circle left"
+                ><i data-feather="arrow-left"></i>
+              </span>
+              <span class="arrow circle right darker">
+                <i data-feather="arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="listings-grid" id="special">
+          <div class="listings-col">
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1562967914-01efa7e87832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>Rs 329 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1532636875304-0c89119d9b4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="listings-grid">
+            <div class="listings-col">
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>Italian Soya Salad</h3>
+                    <div class="info">
+                      <span>Rs 120.99 + delivery fee | 20-30 MINS | </span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >Italian | European | Salad | Healthy</span
+                  >
+                </div>
+              </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings-grid-element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text-title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>Rs 499 delivery fee | 30-40 MINS |</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text-lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/index.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
